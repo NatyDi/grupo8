@@ -1,0 +1,153 @@
+/* Resetear márgenes y padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos generales */
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    background-color: #F5E9DB; /* Color arena */
+}
+
+header {
+    background-color: #333; /* Color de fondo del encabezado */
+    color: #fff; /* Color de texto del encabezado */
+    padding: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff; /* Color de los enlaces del menú */
+    text-decoration: none;
+    transition: color 0.3s ease; /* Transición suave del color */
+}
+
+/*TP: Utilizar al menos una animación, transformación o una transición. */
+nav ul li a:hover {
+    color: #ffd700; /* Cambia el color al pasar el mouse */
+}
+
+main {
+    padding: 20px;
+}
+
+footer {
+    background-color: #333; /* Color de fondo del pie de página */
+    color: #fff; /* Color de texto del pie de página */
+    text-align: center;
+    padding: 20px;
+}
+
+.logo {
+    width: 100px; /* Tamaño del logo */
+    height: auto; /* Altura automática para mantener la proporción */
+}
+
+.content {
+    background-color: #fff; /* Color de fondo del contenido */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+.links {
+    background-color: #fff; /* Color de fondo del contenido */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+.links ul {
+    list-style-type: none;
+}
+
+.links ul li {
+    margin-bottom: 10px;
+}
+
+/* Estilos de imagen */
+.image {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+/* TP: Debe ser totalmente responsive con mínimo 3 puntos de corte con media querys para 3 tamaños de dispositivos (PC escritorio, Tablet, Celular).  */
+
+/* Media query para dispositivos con ancho máximo de 1024px (PC) */
+@media only screen and (max-width: 1024px) {
+    /* Estilos para PC */
+    nav ul li {
+        display: block; /* Cambia los elementos del menú a bloque */
+        text-align: center; /* Centra los elementos del menú */
+        margin: 0 auto 10px; /* Alinea y separa los elementos del menú */
+    }
+}
+
+/* Media queries para dispositivos */
+@media only screen and (max-width: 768px) {
+    /* Estilos para tablet */
+    nav ul li {
+        display: block; /* Cambia los elementos del menú a bloque */
+        text-align: center; /* Centra los elementos del menú */
+        margin: 0 auto 10px; /* Alinea y separa los elementos del menú */
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    /* Estilos para móvil */
+    nav ul li {
+        margin-right: 0; /* Elimina el margen derecho en móvil */
+    }
+}
+
+
+
+
+/* TP: Poseer una estructura HTML maquetada con Flexbox y/o Grid. */
+/* Estilos para el grid de los personajes */
+.characters {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.character {
+    background-color: #fff; /* Color de fondo del personaje */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+.character img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.character h2 {
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.character p {
+    margin-bottom: 10px;
+}
+
+/* Estilos para el título */
+h1 {
+    text-align: center;
+    margin-top: 20px;
+}

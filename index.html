@@ -7,14 +7,17 @@
     <link rel="stylesheet" href="./static/css/styles.css">
     <link rel="shortcut icon" type="image/png" href="favicon.png">
 </head>
+
+<!-- TP: El sitio web debe poseer al menos 4 páginas HTML o 4 secciones si se trata de un sitio One Page. -->
 <body>
     <header>
+        <div class="header-logo">
+            <a href="index.html">
+                <img src="./static/img/logo.png" alt="Logo La WEB del Celiaco">
+            </a>
+        </div>
         <nav class="menu">
-            <img class="logo" src="./static/img/logo-principal.png" alt="Logo principal" >
-
             <ul>
-                <!-- TP: El sitio web debe poseer al menos 4 páginas HTML o 4 secciones
-si se trata de un sitio One Page. -->
                 <li><a href="./index.html">Inicio</a></li>
                 <li><a href="./templates/que-es.html">¿Qué es?</a></li>
                 <li><a href="./templates/recetas.html">Recetas</a></li>
@@ -24,13 +27,22 @@ si se trata de un sitio One Page. -->
             </ul>
         </nav>
     </header>
+    
 
-    <main>
-        <section class="content">
-            <h1>Bienvenido a La WEB del CELIACO</h1>
-            <p>Somos una comunidad dedicada a proporcionar información y apoyo a personas que viven con enfermedad celíaca. Nuestra misión es crear conciencia, compartir recursos útiles y promover un estilo de vida saludable y libre de gluten.</p>
-            <p>Explora nuestras secciones para descubrir más sobre la enfermedad celíaca, encontrar deliciosas recetas sin gluten, conocer a personas famosas que viven con celiaquía, acceder a enlaces útiles y contactarnos para cualquier consulta o sugerencia.</p>
-            <img src="images/welcome.jpg" alt="Bienvenido" class="image">
+    <main class="main-background">
+        <section id="banner">
+            <div class="container card-banner">
+                <h1>Bienvenido a La WEB del CELIACO</h1>
+                <p>Somos una comunidad dedicada a proporcionar información y apoyo a personas que viven con enfermedad celíaca. Nuestra misión es crear conciencia, compartir recursos útiles y promover un estilo de vida saludable y libre de gluten.</p>
+                <p>Explora nuestras secciones para descubrir más sobre la enfermedad celíaca, encontrar deliciosas recetas sin gluten, conocer a personas famosas que viven con celiaquía, acceder a enlaces útiles y contactarnos para cualquier consulta o sugerencia.</p>
+            </div>   
+            <div> 
+                <p>En esta web vas a encontrar...</p>
+                <p>También vas a encontrar</p>
+                <p>Espero te sea útil</p>
+                <!-- <a href="./templates/contacto.html" class="btn-cac">Contactanos</a> -->
+            </div>
+            <!-- <img class="fondo" src="/static/img/fondo.jpg" alt="Fondo gluten free" >  -->
         </section>
     </main>
 

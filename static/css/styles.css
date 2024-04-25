@@ -11,20 +11,74 @@ body {
     background-color: #F5E9DB; /* Color arena */
 }
 
+
 header {
+    /*border: 1px crimson solid; */
+    width: auto; 
+    /*height: auto;*/
+   
+    /* display: inline-block ;   */
+    /* display:block; */
+    display:flex ;  
+    flex-direction: row; /* dirección del eje flex. row es del default */
+    flex-wrap: wrap;
+    /*flex-basis: auto;*/
+    /*justify-content: space-between;*/ /*Eje princial: Distribuye los elementos horizontalmente */
+    justify-content: center;
+    align-items:center; /*Eje secundario: Centra verticalmente los elementos */
     background-color: #333; /* Color de fondo del encabezado */
     color: #fff; /* Color de texto del encabezado */
-    padding: 20px;
+    padding: 8px;
+    box-shadow: 0 0 1.5rem rgba(209, 209, 68, 0.733); /* text-shadow: 0 0 0.55rem rgb(209, 209, 68, 0.733); */
+    margin-left: auto;
+ 
+}  
+
+.header-logo {
+    background-color: #333; /* Color de fondo del encabezado */
+    color: #fff; /* Color de texto del encabezado */
+    margin-right: auto; /* Empuja el logotipo hacia la izquierda */
+    
 }
 
-nav ul {
+.header-logo img {    
+   /*border: 1px rgb(82, 214, 56) solid; */
+   height: 4rem; 
+   width: 4rem; 
+   /* margin-right: 40px; */
+   
+
+}
+
+.header-logo img:hover {
+    /* border: 1px rgb(82, 214, 56) solid;  */
+    animation: tilt-n-move-shaking 0.50s infinite; 
+    
+}
+@keyframes tilt-n-move-shaking {
+    0% { transform: translate(0, 0) rotate(0deg); }
+    25% { transform: translate(5px, 5px) rotate(5deg); }
+    50% { transform: translate(0, 0) rotate(0eg); }
+    75% { transform: translate(-5px, 5px) rotate(-5deg); }
+    100% { transform: translate(0, 0) rotate(0deg); }
+}
+
+.menu {
+    /* Aquí definimos que el menú se expanda todo lo posible */
+    flex-grow: 1;
+}
+
+nav ul {    
     list-style-type: none;
     text-align: center;
+    
 }
 
 nav ul li {
     display: inline;
     margin-right: 20px;
+    vertical-align: middle; /* Alinea verticalmente los elementos con la imagen */
+
 }
 
 nav ul li a {
@@ -36,33 +90,73 @@ nav ul li a {
 /*TP: Utilizar al menos una animación, transformación o una transición. */
 nav ul li a:hover {
     color: #ffd700; /* Cambia el color al pasar el mouse */
+   /* text-decoration: underline;*/ /* Agrega un subrayado al pasar el mouse sobre los enlaces */
 }
 
 main {
-    padding: 20px;
-}
-
-footer {
-    background-color: #333; /* Color de fondo del pie de página */
-    color: #fff; /* Color de texto del pie de página */
-    text-align: center;
-    padding: 20px;
-}
-
-.logo {
-    width: 100px; /* Tamaño del logo */
-    height: auto; /* Altura automática para mantener la proporción */
-}
-
-.content {
-    background-color: #fff; /* Color de fondo del contenido */
+    /* border: 2px rgb(202, 49, 22) solid;  */
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+
 }
 
-.links {
-    background-color: #fff; /* Color de fondo del contenido */
+
+.main-background {
+    position: relative; /* Establecer la posición relativa para que los pseudoelementos se posicionen correctamente */
+    padding: 20px; /* Agregar un relleno para separar el contenido del borde */
+}
+
+.main-background::after {
+    content: ''; /* Agregar contenido al pseudoelemento */
+    position: absolute; /* Establecer la posición absoluta */
+    top: 0; /* Alinear el pseudoelemento arriba */
+    left: 0; /* Alinear el pseudoelemento a la izquierda */
+    width: 100%; /* Establecer el ancho al 100% */
+    height: 100%; /* Establecer la altura al 100% */
+    background-image: url('../../static/img/fondo.jpg'); /* Ruta de la imagen de fondo */
+    background-size: cover; /* Ajustar el tamaño de la imagen para cubrir todo el contenedor */
+    background-repeat: no-repeat; /* Evitar que la imagen de fondo se repita */
+    background-position: center; /* Centrar la imagen de fondo */
+    background-color: rgba(255, 255, 255, 0.5); /* Color blanco con opacidad del 50% */
+    z-index: -1; /* Colocar el pseudoelemento detrás del contenido */
+    opacity: 0.45; /*Establece la opacidad de la imagen de fondo (valor entre 0 y 1)*/
+}
+
+
+
+#banner{
+    /* border: 2px rgb(66, 53, 185) solid;  */
+    border-radius: 10px;
+    height: 600px;
+    opacity: 1;
+
+
+}
+
+.container{
+    /* border: 2px rgb(82, 214, 56) solid;  */
+    max-width: 1200px;
+    margin: 12px auto;
+}
+
+.card-banner{
+    margin: 0 auto;
+    text-align: center;
+    padding:0 160px;
+}
+
+/*
+.card-banner h1{
+}
+*/
+/*
+.card-banner h2{
+    margin-bottom: 20px;
+}
+*/
+
+.links {    
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
@@ -151,3 +245,14 @@ h1 {
     text-align: center;
     margin-top: 20px;
 }
+
+
+
+footer {
+    background-color: #333; /* Color de fondo del pie de página */
+    color: #fff; /* Color de texto del pie de página */
+    text-align: center;
+    padding: 20px;
+}
+
+

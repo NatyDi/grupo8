@@ -123,7 +123,16 @@ main {
     opacity: 0.40; /*Establece la opacidad de la imagen de fondo (valor entre 0 y 1)*/
 }
 
-
+.recipes{
+    justify-content: center;
+    align-items:center; /*Eje secundario: Centra verticalmente los elementos */
+   
+    ul{
+        color: #0c0c0c; /* Color de texto del encabezado */
+    }
+    
+   
+}
 
 #banner{
     /* border: 2px rgb(66, 53, 185) solid;   */
@@ -258,8 +267,98 @@ h1 {
     margin-top: 20px;
 }
 
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px;
+    grid-template-columns: 1fr 1fr;
+    margin: 20px;
+    background-color:#f8f7f1;
+    border-radius: 2em;
+    padding: 2em;
+    text-align: center;
 
+}
 
+.recipe {
+    border: 1px solid #ccc;
+    padding: 20px;
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 30px;
+}
+.recipe img {
+    max-height: 200px; /* Ajusta la altura máxima de la imagen */
+}
+
+.recipe a {
+    display: block;
+    margin-top: 10px;
+    
+}
+.container2 {
+    display: grid;
+    grid-template-columns: 40px
+    grid-gap: 20px;
+    grid-template-rows: 50;
+    margin: auto;
+    background-color:#f8f7f1;
+    border-radius: 2em;
+    padding: 2em;
+   
+}
+.recipe {
+            margin-bottom: 30px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+
+        .recipe h2 {
+            color: #009688;
+            margin-bottom: 10px;
+            font-size: 24px;
+        }
+
+        .recipe p {
+            font-weight: bold;
+            margin-bottom: 5px;
+            text-align: left;
+           
+        }
+
+        .recipe ul,
+        .recipe ol {
+            margin-left: 20px;
+            margin-bottom: 10px;
+            text-align: left;
+        }
+
+        .recipe a {
+            text-decoration: none;
+            color: #009688;
+            font-weight: bold;
+            margin-top: 80px;
+        }
+
+        .ingredientes {
+            margin-top: 40px;
+
+        }
+        .relleno{
+            margin-top: 30px;
+        }
+        .preparacion{
+         text-align: center;  
+         margin-top: 50px;
+        }
+        
 
 footer {
     position: relative;
@@ -271,4 +370,9 @@ footer {
     padding: 20px;
 }
 
+section {
+    margin: auto;
+    max-width: 70rem;
+    width: 100%;
+}
 

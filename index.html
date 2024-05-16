@@ -1,14 +1,24 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- initial-scale=1.0: Esta parte establece el nivel de zoom inicial cuando la página se carga por primera vez. Un valor de 1.0 significa que no habrá zoom inicial, y la página se mostrará al 100% de su tamaño real. -->
     <title>La WEB del CELIACO - Inicio</title>
     <link rel="stylesheet" href="./static/css/styles.css">
-    <link rel="shortcut icon" type="../La web del celiaco" href="/static/img/images.ico">
+    <link rel="icon" href="./static/img/favicon.ico">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@400..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
 </head>
 
 <!-- TP: El sitio web debe poseer al menos 4 páginas HTML o 4 secciones si se trata de un sitio One Page. -->
+
 <body>
     <header>
         <div class="header-logo">
@@ -27,22 +37,53 @@
             </ul>
         </nav>
     </header>
-    
+
 
     <main class="main-background">
-        <section id="banner">
+        <section >
             <div class="container card-banner">
                 <h1>Bienvenido a La WEB del CELIACO</h1>
-                <p>Somos una comunidad dedicada a proporcionar información y apoyo a personas que viven con enfermedad celíaca. Nuestra misión es crear conciencia, compartir recursos útiles y promover un estilo de vida saludable y libre de gluten.</p>
-                <p>Explora nuestras secciones para descubrir más sobre la enfermedad celíaca, encontrar deliciosas recetas sin gluten, conocer a personas famosas que viven con celiaquía, acceder a enlaces útiles y contactarnos para cualquier consulta o sugerencia.</p>
-            </div>   
-            <div class="container presentacion"> 
+                <p>Somos una comunidad dedicada a proporcionar información y apoyo a personas que viven con enfermedad
+                    celíaca. Nuestra misión es crear conciencia, compartir recursos útiles y promover un estilo de vida
+                    saludable y libre de gluten.</p>
+                <p>Explora nuestras secciones para descubrir más sobre la enfermedad celíaca, encontrar deliciosas
+                    recetas sin gluten, conocer a personas famosas que viven con celiaquía, acceder a enlaces útiles y
+                    contactarnos para cualquier consulta o sugerencia.</p>
+            </div>
+
+            <!-- <div class="container presentacion">
                 <p>En esta web vas a encontrar...</p>
                 <p>También vas a encontrar</p>
-                <p>Espero te sea útil</p>
-                <!-- <a href="./templates/contacto.html" class="btn-cac">Contactanos</a> -->
-            </div>            
-        </section>
+                <p>Espero te sea útil</p>                
+            </div> -->
+
+            <section class="Index-menu-general">
+                <div class="Index-menu">
+                    <a href="./templates/que-es.html"><img  src="./static/img/que-es.jpg" alt="alimentos_sin_gluten"></a> 
+                    <h2>Que es</h2>
+                    <p>Te contamos que es la celiaquía, sintomas, etc</p>
+                </div>
+                <div class="Index-menu">
+                    <a href="./templates/recetas.html"><img  src="./static/img/Recetas-sin-gluten.jpg" alt="Recetas"></a> 
+                    <h2>Recetas</h2>
+                    <p>Comé rico y nutritivo con estas recetas</p>
+                </div>
+                <div class="Index-menu">
+                    <a href="./templates/personajes.html"><img  src="./static/img/Personajes.jpg" alt="Personajes"></a> 
+                    <h2>Personajes</h2>
+                    <p>Conoce personajes famosos con celiaquía</p>
+                </div>
+                <div class="Index-menu">
+                    <a href="./templates/links-utiles.html"><img  src="./static/img/Links.jpg" alt="Links útiles"></a> 
+                    <h2>Links</h2>
+                    <p>Los más útiles links relacionados a la celiaquía</p>
+                </div>
+                <div class="Index-menu">
+                    <a href="./templates/contacto.html"><img  src="./static/img/Contacto.jpg"" alt="Contacto"></a> 
+                    <h2>Contacto</h2>
+                    <p>Querés contactarnos?</p>
+                </div>
+            </section>
     </main>
 
     <footer>

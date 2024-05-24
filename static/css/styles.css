@@ -3,17 +3,14 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /*Las propiedades width y height incluyen el contenido, el padding y el border. El ancho y alto definido para un elemento serán sus dimensiones totales, independientemente del padding y el border.*/
 }
-
 
 .el-messiri-font {
     font-family: "El Messiri", "sans-serif";
-    font-optical-sizing: auto;
+    /*font-optical-sizing: auto;  da error en el https://validator.w3.org/*/
     font-weight: 400;
     font-style: normal;
 }
-
 
 /* Estilos generales */
 body {
@@ -23,12 +20,13 @@ body {
 
 h1{
     color: #009688;
+    text-align: center;
+    margin-top: 20px;
 }
 
 header {
     /*border: 1px crimson solid; */
     width: auto;                /*height: auto;*/
-
     display: flex;
     flex-direction: row;        /* dirección del eje flex. row es del default */
     flex-wrap: wrap;            /*flex-basis: auto;*/
@@ -44,14 +42,6 @@ header {
 }
 
 /* -----------------  LOGO  -----------------*/
-
-/*.header-logo {*/
-    /* background-color: #333; /* Color de fondo del encabezado */
-    /*color: #fff; /* Color de texto del encabezado */
-    /*color: #1c20da; /* Color de texto del encabezado */
-    /* margin-right: auto; /* Empuja el logotipo hacia la izquierda */
-
-/*}*/
 
 .header-logo img {
     /*border: 1px rgb(82, 214, 56) solid; */
@@ -69,10 +59,7 @@ header {
 @keyframes logo-animation {
     0% {transform: translate(0, 0) rotate(90deg);}
     25% {transform: translate(5px, 5px) rotate(5deg);}
-    50% {transform: translate(0, 0) rotate(45eg);}
-
-    /*75% { transform: translate(-5px, 5px) rotate(-5deg); }*/
-    /* 100% { transform: translate(0, 0) rotate(0deg); }*/
+    50% {transform: translate(0, 0) rotate(45deg);}
 }
 
 /* -----------------  MENU HEADER  -----------------*/
@@ -88,10 +75,9 @@ nav ul {
 }
 
 nav ul li {
-    display: inline;
-    /*Para que el menu aparezca horizontal si entre en el ancho*/
-    margin-right: 50px;
-    /*vertical-align: middle; /* Alinea verticalmente los elementos con la imagen */
+    display: inline;                    /*Para que el menu aparezca horizontal y entre en el ancho*/
+    margin-right: 50px;                 /*vertical-align: middle; /* Alinea verticalmente los elementos con la imagen */
+
 
 }
 
@@ -184,7 +170,7 @@ nav ul li a:hover {
     border: 2px #af7373 inset; 
     box-shadow: 0 0 10px rgba(182, 36, 36, 0.1); 
     border-radius: 10px;
-    padding: 10x;  
+    padding: 10px;  
     color: #333;
     border-width: 1px;
     background-color: #b4a58f;
@@ -306,11 +292,7 @@ nav ul li a:hover {
     margin-bottom: 10px;
 }
 
-/* Estilos para el título */
-h1 {
-    text-align: center;
-    margin-top: 20px;
-}
+
 
 /* -----------------  INDEX  -----------------*/
 .Index-menu-general {
@@ -404,7 +386,7 @@ footer {
     display: grid;
     /*grid-template-columns: 40px ;*/
     grid-gap: 40px;
-    grid-template-rows: 50;
+    grid-template-rows: 50px;
     margin: auto;
     /*background-color: #f8f7f1;*/
     background-color: #e7e1bf;

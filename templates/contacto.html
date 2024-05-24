@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacto</title>    
+    <title>Contacto</title>
     <link rel="stylesheet" href="../static/css/styles_naty.css">
-    <script src="script.js" defer></script>
-
-    <link rel="icon"  href="../static/img/favicon.ico">
+   
+    <link rel="icon" href="../static/img/favicon.ico">
     <!-- Google fonts El Messiri -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,6 +15,7 @@
 
 
 </head>
+
 <body>
     <header>
         <div class="header-logo">
@@ -38,51 +39,47 @@
     imagen, con validación realizada mediante JavaScript para que los
     campos sean obligatorios. -->
     <main class="main-background2">
-        <section id="banner2">
-                <div class="container3">
-                    <section class="contact">
-                        <h1>Contacto</h1>
-                        <form id="contactForm" onsubmit="return validateForm()">
-                
-                    <label for="name">Nombre:</label>
-                    <input type="text" id="name" name="name" placeholder="Ingrese su nombre">
-                 
-                    <label for="email">Correo electrónico:</label>
-                    <input type="email" id="email" name="email" placeholder="Ingrese su correo">
-                 
-                    <label for="message">Mensaje:</label>
-                    <textarea id="message" name="message" rows="4"></textarea>
-                
-                    <label for="category">Categoría:</label>
-                    <select id="category" name="category">
-                        <option value="">Seleccionar categoría...</option>
-                        <option value="Consulta">Consulta</option>
-                        <option value="Sugerencia">Sugerencia</option>
-                        <option value="Reclamo">Reclamo</option>
-                        <option value="Agragar">Agregar un negocio</option>
-                        
-                    </select>
-                                
-                    <label for="fecha_nacimiento">Fecha de Nacimiento:</label>
-                    <input type="date" id="fecha_nacimiento" name="fecha_nacimiento">
-                                      
-               
-                    <label for="terms">Acepto los términos y condiciones:</label>
-                    <input type="checkbox" id="terms" name="terms" required>
-                                
-                
-                    <label for="attachment">Adjuntar Documento:</label>
-                    <input type="file" id="attachment" name="attachment"  accept="image/*" placeholder="Seleccionar archivo...">
-                    
-                
-                <button type="submit">Enviar</button>
-            </form>
-        </section>
-    </div>
-    </main>
 
+            <div class="container3">
+                <section class="contact">
+                    <h1>Contacto</h1>
+                    <form id="contactForm" method="post">
+
+                        <label for="name">Nombre:</label>
+                        <input type="text" id="name" name="name" placeholder="Ingrese su Nombre">
+
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" placeholder="Ingrese su Email">
+
+                        <label for="message">Mensaje:</label>
+                        <textarea id="message" name="message" rows="4" placeholder="Opcinalmente puede ingresar un mensaje"> </textarea>
+
+                        <label for="category">Categoría:</label>
+                        <select id="category" name="category">
+                            <option value="Agragar">Agregar su negocio a los links</option>
+                            <option value="">Seleccionar categoría...</option>
+                            <option value="Consulta">Consulta</option>
+                            <option value="Sugerencia">Sugerencia</option>
+                            <option value="Reclamo">Reclamo</option>                            
+                        </select>
+
+                        <label for="fecha_nacimiento">Fecha de Nacimiento:</label>
+                        <input type="date" id="fecha_nacimiento" name="fecha_nacimiento">
+
+                        <label for="attachment">Adjuntar Documento:</label>
+                        <input type="file" id="attachment" name="attachment" accept=".*">
+
+
+                        <button type="submit">Enviar</button>
+                    </form>
+                </section>
+            </div>
+
+    </main>
+    <script src="../static/js/script.js"></script>
     <footer>
         <p>CAC - 2024 - Comision 2418 - Equipo 8 - TP 1</p>
     </footer>
 </body>
+
 </html>

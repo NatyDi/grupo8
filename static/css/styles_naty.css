@@ -571,3 +571,15 @@ footer {
 
     /*Eje secundario: Centra verticalmente los elementos */
 }
+
+.whatsapp{
+    border: 5px rgb(82, 214, 56) ridge ;  
+    margin-top: 30px;
+    padding-top: 10px;
+    font-weight: bold;
+    text-align: center;
+}
+
+   
+
+

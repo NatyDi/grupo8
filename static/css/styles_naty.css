@@ -80,17 +80,8 @@ header {
 }
 
 @keyframes logo-animation {
-    0% {
-        transform: translate(0, 0) rotate(90deg);
-    }
-
-    25% {
-        transform: translate(5px, 5px) rotate(5deg);
-    }
-
-    50% {
-        transform: translate(0, 0) rotate(45deg);
-    }
+    0% {transform: translate(0, 0) rotate(90deg);}
+    50% {transform: translate(5px, 5px) rotate(5deg);}
 
     /*75% { transform: translate(-5px, 5px) rotate(-5deg); }*/
     /* 100% { transform: translate(0, 0) rotate(0deg); }*/
@@ -206,7 +197,7 @@ nav ul li a:hover {
     margin: 15px 0;
     padding: 10px;
     background-color: #e9f5e9;
-    border-left: 4px solid #bcebbd;
+    /* border-left: 4px solid #bcebbd; */
     transition: background-color 0.3s, transform 0.3s;
     line-height: 1.5;
     text-align: left;

@@ -58,8 +58,7 @@ header {
 
 @keyframes logo-animation {
     0% {transform: translate(0, 0) rotate(90deg);}
-    25% {transform: translate(5px, 5px) rotate(5deg);}
-    50% {transform: translate(0, 0) rotate(45deg);}
+    50% {transform: translate(5px, 5px) rotate(5deg);}
 }
 
 /* -----------------  MENU HEADER  -----------------*/
@@ -165,23 +164,28 @@ nav ul li a:hover {
 
 .links {
     /*box-shadow: 0 0 10px rgba(182, 36, 36, 0.1);    */
-    padding: 10px;
-    /*padding: 1em 2em;*/
-    border-radius: 8px;
+    margin: 10px;
+    margin-top: 20px;
+    /*padding: 1em 2em;*/    
+    background-color: #f0f8eb; /* Verde claro */
+    padding: 20px;
+    border-radius: 10px;
     text-align: center;
-    
-
+    display: flex; flex-direction: column; align-items: center;
 }
 
+
+
 .links h2 {
-    border: 2px #af7373 inset; 
-    box-shadow: 0 0 10px rgba(182, 36, 36, 0.1); 
+    border: 100px #af7373 inset; 
     border-radius: 10px;
-    padding: 10px;  
-    color: #333;
-    border-width: 1px;
-    background-color: #b4a58f;
-    width: auto;
+    padding: 5px;  
+    color: #333333;
+    border-width: 2px;
+    background-color: #e4d0b2;
+    width: 850px; 
+    max-width: 850px;
+
     
 }
 

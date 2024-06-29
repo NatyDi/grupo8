@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personajes Famosos con Celiaquía</title>
+    <link rel="stylesheet" href="../static/css/styles.css">
+    <link rel="icon"  href="../static/img/favicon.ico">
+    <!-- Google fonts El Messiri -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@400..700&display=swap" rel="stylesheet">
+    <!-- <meta http-equiv="Access-Control-Allow-Origin" content="*" /> -->
+    <link rel="stylesheet" href="../static/css/crud-personajes.css">
+</head>
+
+
+<body >
+    <body>
+        <header>
+            <div class="header-logo">
+                <a href="../index.html">
+                    <img src="../static/img/logo.png" alt="Logo La WEB del Celiaco">
+                </a>
+            </div>
+            <nav class="menu">
+                <ul>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="que-es.html">¿Qué es?</a></li>
+                    <li><a href="recetas.html">Recetas</a></li>
+                    <li><a href="personajes.html">Personajes</a></li>
+                    <li><a href="links-utiles.html">Links Útiles</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
+    </header>
+    <!-- Indicar contenido principal de la pagina -->
+    <main> 
+        <section id="form" class="container ">
+            <h2 class="search-title">Gestión de Personajes</h2>
+            <p class="description" >En esta sección se podra llevar a cabo la gestión de las personajes de la Web del Celiaco</p>
+            <form action="#"  id="form-personaje">
+                <div class="d-flex">
+                    <div class="form-control d-flex-column">
+                        <label for="title">Personaje</label>
+                        <input type="text" class="input-search" name="personaje" id="personaje">
+                    </div>
+                    <div class="form-control d-flex-column">
+                        <label for="Descrpción">Descrpción</label>
+                        <input type="text" class="input-search" name="descripcion" id="descripcion">
+                    </div>
+                    <div class="form-control d-flex-column">
+                        <label for="fecha_nacimiento">Fecha Nacimiento</label>
+                        <input type="date" class="input-search" name="fecha_nacimiento" id="fecha_nacimiento">
+                    </div>
+                    <div class="form-control d-flex-column">
+                        <label for="url_foto">Foto</label>
+                        <input type="url" class="input-search" name="url_foto" id="url_foto">
+                    </div>                
+                    <input type="hidden"  name="id" id="id-personaje">
+                    <!-- <input  type="text" name="id" id="id_personaje"> -->
+                    <button class="btn-personaje" type="button" id="btn-save-personaje">Agregar</button>
+                </div>
+            </form> 
+        </section>
+        <section id="list" class="container">
+            <h3 class="subtitle">Listado de personajes</h3>
+            <table id="list-table-personajes" class="table">
+                <thead>
+                    <tr>
+                        <th>Personaje</th>
+                        <th>Descripción</th>
+                        <th>Fecha de nacimiento</th>
+                        <th>Foto</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody id="tbody-table-personajes">
+                    
+                </tbody>
+            </table>
+        </section>  
+    </main>
+
+
+    <!-- INTERNO AL DOCUMENTO -->
+    <script>
+        //alert('Hola mundo PERSONAJES 😎');
+        // console.log('Hola por medio de la consola 😀');
+    </script>
+
+    <!-- REFERENCIA EXTERNA -->
+    <!-- <script src="./static/js/index.js"></script> -->
+    <!-- <script src="./static/js/funciones.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="../static/js/crud-personajes-fetch.js"></script>
+    <!-- <script src="../static/js/index.js"></script> -->
+</body>
+
+</html>

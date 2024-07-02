@@ -1,0 +1,98 @@
+.description{
+    color: #009688;
+    margin: 20px 0px;
+}
+
+#form .d-flex{
+    justify-content: space-around;
+}
+
+.d-flex-column{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.form-control label{
+    color: #0e0c0c;
+}
+
+.form-control input {
+    height: 50px;
+    width: 100%;
+    background: rgba(255,255,255,0.1);
+    border: 2px solid rgb(161, 22, 22);
+    outline: none;
+    border-radius: 5px;
+    color: #0a0a0a;
+    font-size: 1rem;
+    padding: 0 20px;
+}
+.form-select {
+    display: block;
+    width: 100%;
+    padding: 12px 20px;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #18a118;
+    background: rgba(255,255,255,0.1);
+    border: 2px solid white; 
+    border-radius: 25px;
+    margin: 20px 0px;
+
+}
+
+.form-select option{
+    color:#2a2a2a;
+}
+
+.subtitle{
+    color: rgb(146, 50, 184);
+    font-size: 1.5vw;
+}
+
+#list{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.table {
+    margin: 30px 0px;
+    width: 100%;
+    margin-bottom: 1rem;
+    color: #9e2c2c;
+    vertical-align: top;
+    border-color: #1069c2;
+}
+
+.table th,
+.table td {
+    padding: 8px; 
+    text-align: center;
+}
+.table th{
+    border-bottom: 1px solid #080808;
+}
+.table td{
+    border-bottom: 1px solid #4f4f4f;
+}
+
+#list-div-movies{
+    width: 100%;
+}
+
+.item-movie{
+    background-color: var(--primary-color);
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0px;
+}
+
+h3{
+    align-self: center;
+}

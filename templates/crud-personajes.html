@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personajes Famosos con Celiaquía</title>
+    <link rel="stylesheet" href="../static/css/styles.css">
+    <link rel="icon"  href="../static/img/favicon.ico">
+    <!-- Google fonts El Messiri -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@400..700&display=swap" rel="stylesheet">
+    <!-- <meta http-equiv="Access-Control-Allow-Origin" content="*" /> -->
+    <!-- <link rel="stylesheet" href="/static/css/crud-personajes.css"> -->
+    <link rel="stylesheet" href="../static/css/crud-personajes.css">
+</head>
+
+
+<body>
+        <header>
+            <div class="header-logo">
+                <a href="../index.html">
+                    <img src="../static/img/logo.png" alt="Logo La WEB del Celiaco">
+                </a>
+            </div>
+            <nav class="menu">
+                <ul>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="que-es.html">¿Qué es?</a></li>
+                    <li><a href="recetas.html">Recetas</a></li>
+                    <li><a href="personajes.html">Personajes</a></li>
+                    <li><a href="links-utiles.html">Links Útiles</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
+    <!-- Indicar contenido principal de la pagina -->
+    <main> 
+        <section id="form" class=" ">
+            <h1 class="search-title" >Gestión de Personajes</h1>
+            <p class="description" >En esta sección se podra llevar a cabo la gestión de los personajes de la Web del Celiaco</p>
+
+            <form action="#" class="formulario" id="form-personaje">
+                <div class="formulario__grupo">
+                    <div class="formulario__grupo-input">
+                        <label for="title" class="formulario__label">Personaje</label>
+                        <input type="text" class="formulario__input" name="personaje" id="personaje">
+                    </div>
+                </div>
+                
+                <div class="formulario__grupo">
+                    <div class= "formulario__grupo-input">
+                        <label for="Descrpción" class="formulario__label">Descripción</label>
+                        <input type="text" class="formulario__input" name="descripcion" id="descripcion">
+                    </div>
+                </div>
+                <div class="formulario__grupo">
+                    <div class="formulario__grupo-input">
+                        <label for="fecha_nacimiento" class="formulario__label">Fecha Nacimiento</label>
+                        <input type="date" class="formulario__input" name="fecha_nacimiento" id="fecha_nacimiento">
+                    </div>
+                </div>
+                <div class="formulario__grupo">
+                    <div class="formulario__grupo-input">
+                        <label for="url_foto" class="formulario__label">Foto</label>
+                        <input type="url" class="formulario__input" name="url_foto" id="url_foto">
+                    </div>    
+                </div>            
+                    <input type="hidden"  name="id_personaje" id="id_personaje">
+                    <!-- <input  type="text" name="id_personaje" id="id_personaje"> -->
+                    <button class="formulario__btn" type="button" id="btn-save-personaje">Agregar</button>
+            
+            </form> 
+        </section>
+        <section id="list" class="container">
+            <h3 class="subtitle">Listado de personajes</h3>
+            <table id="list-table-personajes" class="table">
+                <thead>
+                    <tr>
+                        <th>Personaje</th>
+                        <th>Descripción</th>
+                        <th>Fecha de nacimiento</th>
+                        <th>Foto</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody id="tbody-table-personajes">
+                    
+                </tbody>
+            </table>
+        </section>  
+    </main>
+    <footer>
+		<div class="link_crud">
+            <p>CAC - 2024 - Comision 24184 - Equipo 8 - TP - BACKEND <br>
+             Nathaly Diaz - Marcelo Pujia - Nicolas Bourgnigthon - Marcelo Mora</p>
+            <!-- <a href="#">Crud_Personajes</a> -->
+        </div>
+		
+    </footer>
+
+
+    <!-- INTERNO AL DOCUMENTO -->
+    <script>
+        //alert('Hola mundo PERSONAJES 😎');
+        // console.log('Hola por medio de la consola 😀');
+    </script>
+
+    <!-- REFERENCIA EXTERNA -->
+    <!-- <script src="./static/js/index.js"></script> -->
+    <!-- <script src="./static/js/funciones.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="../static/js/crud-personajes-fetch.js"></script>
+    <!-- <script src="../static/js/index.js"></script> -->
+</body>
+
+</html>

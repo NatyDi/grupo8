@@ -1,6 +1,6 @@
-const BASEURL = 'http://127.0.0.1:5000';
+/*const BASEURL = 'http://127.0.0.1:5000';*/
 
-// const BASEURL = 'mpujia.pythonanywhere.com';
+const BASEURL = 'https://mpujia.pythonanywhere.com/';
 
 /**
  * Función para realizar una petición fetch con JSON.
